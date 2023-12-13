@@ -31,7 +31,7 @@ Seu projeto deve ter uma estrutura clara e organizada. Considere o uso de arquiv
 1. Clone este repositório em sua máquina local:
 
    ```bash
-   git clone https://github.com/seu-nome-de-usuario/pokemon-api-test.git
+   git clone https://github.com/Auditar-Assessoria/desenvolvedor-web.git
    
 Abra o projeto em seu editor de código preferido.
 
