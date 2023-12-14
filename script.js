@@ -19,10 +19,11 @@ async function getPokemon(pokemon) {
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     const data = await response.json();
+    createPokemonCard(data)
     return data
     
   } catch (error) {
-    window.alert("Pokemon não encontrado!")
+    console.log(error)
   }
 }
 
@@ -87,7 +88,7 @@ const renderPokemon = async (pokemon) => {
     searchPokemon = data.id;
   } else {
     pokemonImage.style.display = 'none';
-    pokemonName.innerHTML = 'Pokemon não encontrado :(';
+    pokemonName.innerHTML = 'Pokemon não encontrado';
     pokemonNumber.innerHTML = '';
   }
 }
